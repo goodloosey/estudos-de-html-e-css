@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="goodloosey.ico" type="image/x-icon">
+    <style>
+
+        h2#right{ /*para Id se usa "#" e para classes usa "." */
+            text-align: right;
+        }
+        h2#center{
+            text-align: center;
+        }
+        h2#left{ 
+            text-align: justify;
+        }
+        p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        body{
+            background-color: rgb(205, 255, 203);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .division{
+            display: inline-block;
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        .division:hover{
+            background-color: yellow;
+        }
+        .division:active{
+             background-color: black;
+             color: white;
+        }
+        #esconda{
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+        }
+        #esconda:hover{
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: blue;
+        }
+        #link::before{
+            content: '⇐ ';
+        }
+        #link::after{
+            content: '⟹ ';
+        }
+        #boxx{
+            background-color: lightgreen;
+            width: 300px;
+            height: 300px;
+            border: darkslategray solid 10px;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            outline: darkgreen dashed 10px;
+        }
+        #span-box{
+            box-shadow: 5px 5px 10px black;
+            padding: 12px;
+            background-color: aquamarine;
+            border-radius: 20px 5px 20px 5px;
+        }
+        #inks{
+            margin: 240px;
+        }
+        #lorenas{
+            border: 20px solid transparent;
+            padding: 10px;
+            background-color: white;
+            border-image: url('outro balão.png') 245 repeat;
+        }
+        :root{
+            --verde: #1a5c67
+        }
+        #vars{
+            color: var(--verde);
+        }
+
+
+    </style>
+    <title>Alinhamento</title>
+</head>
+<body>
+    <h1>Tipos de Alinhamento</h1>
+    <h2 id="right">Direita</h2>
+    <h2 id="left">Esquerda</h2>
+    <h2 id="center">Centralizado</h2>
+    <h1>Lorem Ipsus com "text-indent"</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora veritatis aspernatur fugiat excepturi explicabo voluptate nemo harum, velit aliquam est sequi provident repellendus dolores at repudiandae odit. Soluta, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse quam temporibus beatae mollitia, quibusdam quod? Corrupti odio quos quaerat eaque quidem nisi, dolore consequuntur earum iure veniam vitae eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, nostrum exercitationem! Fugiat earum dolorum quo, modi reprehenderit repellat reiciendis, magnam dolor omnis tempora veritatis numquam neque pariatur ducimus necessitatibus ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio, repudiandae eius nobis culpa facere consectetur praesentium ullam, quis libero quod dolores quo aliquam voluptate porro molestias vero! Animi, odio!</p>
+    <h1>DIVS e Pseudo Classes</h1>
+    <div class="division">01</div>
+    <div class="division">02</div>
+    <div class="division">03</div>
+    <div id="esconda">fique sobre mim que eu sumo!</div>
+    <h1>Pseudo Elementos e Pseudo Classes</h1>
+ <a href="https://www.google.com" target="_blank" id="link">Exemplo de Visited: se é visitado é azul: google.com </a>
+ <h1 id="boxx">Box Model</h1> <!--sempre que o Chrome DevTools falar "User agent" é o proprio Chrome.-->
+ <p>parágrafos são box-level. <a href="#"> mas os links são inline-level</a>. vamos ver direitinho como isso funciona.</p>
+ <img src="PaddingMarginBorder.jpeg" alt=""> 
+ <header>
+    <h1>cabeçalho Header</h1>
+     <nav>
+    <h2><a href="#">links nav dentro de header</a></h2>
+ </nav>
+ </header>
+ <main>
+    <h1>conteudo principal Main</h1>
+    <section>
+        <h2>assuntos section dentro de main</h2>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in reprehenderit quae, accusantium totam sequi quaerat, aut voluptas sapiente culpa asperiores odio, aliquid eaque molestias ducimus? Doloribus ipsum illo accusamus!
+            <aside>artigo escrito por fulano</aside>
+        </article>
+    </section>
+ </main>
+ <footer>
+    <h1>rodapé footer</h1>
+ </footer>
+
+ <h2>Sombras e Vértices arredondadas</h2>
+ <span id="span-box">botão bonitinho com box-shadow e border-radius </span>
+
+ <h3>Borda personalizada</h3>
+ <p id="lorenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores nulla voluptates id voluptatem laborum ex possimus quos maxime animi, veritatis sint sapiente eum aliquid dolorum error quas qui natus.</p>
+
+<h1>Variáveis em CSS3</h1>
+<p id="vars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque quas facere pariatur architecto? Beatae, voluptatem! Nulla perferendis itaque saepe accusantium quo, dignissimos amet quod deleniti, blanditiis consequatur non eveniet!</p>
+<h1>Imagens com tamanhos</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=37N--kJ-9Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+
+
+
+<br>
+ <a href="pre_avançado.html" id="inks"> como eu tava antes!!!</a>
+ <br>
+ <br>
+ <a href="css-html-pro.html">como eu estou no futuro!!!!!!!!!!!!!!!!!!!!!!!!</a>
+</body>
+</html>
