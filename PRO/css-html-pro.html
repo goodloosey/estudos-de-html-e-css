@@ -67,6 +67,28 @@
         #u4{
             background-position: center center;
         }
+        #header4{
+            color: black;
+        }
+        table, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td{
+            transition: 0.5s;
+            text-align: center;
+        }
+        tr {
+            background-color: lightgrey;
+        }
+        td:hover {
+            background-color: grey;
+            transition: 0.5s;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
     </style>
     <link rel="shortcut icon" href="goodloosey.ico" type="image/x-icon">
     <title>HTML-CSS Pro</title>
@@ -87,6 +109,37 @@
         <div class="bloco" id="u2"></div>
         <div class="bloco" id="u3"></div>
         <div class="bloco" id="4"></div>
+    </div>
+    <div id="header4">
+        <h1>Tabelas em HTML</h1>
+        <!--HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+        TABLE ROW = linha da tabela
+        TABLE HEADER = cabeçalho da tabela
+        TABLE DATA = dado da tabela
+        -->
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
     </div>
     <a href="css_avançado.html">eu como estava antigamente.</a>
 </body>
