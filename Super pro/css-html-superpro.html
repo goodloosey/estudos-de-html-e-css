@@ -5,6 +5,7 @@
         *{
             background-color: #7fffd4;
             font-family:  sans-serif;
+            color: black;
         }
         iframe#iframe{
             height: 400px;
@@ -25,7 +26,10 @@
         <h2>configurando iframe</h2>
         <iframe src="https://www.helloworld.org" frameborder="0" height="400px" width="400px" scrolling="yes"><a href="https://www.helloworld.org" target="_blank"></a></iframe> <!--o scrolling="no" faz ele fica parado, mas, no windows chrome não funciona ainda.-->
         <h2>locais</h2>
-        <iframe src="teste_iframe_local.html" frameborder="1" height="400px" width="400px"></iframe>
+        <iframe src="paginas extras/teste_iframe_local.html" frameborder="1" height="400px" width="400px"></iframe>
+        <h2>Iframe link name</h2>
+        <a href="paginas extras/teste_iframe_local.html" target="tela">primeira pagina</a>
+        <iframe name="tela" width="400px" height="400px">seu dispositivo não tem a ferramenta de iframe.</iframe>
     <div/>
 </body>
 </html>
